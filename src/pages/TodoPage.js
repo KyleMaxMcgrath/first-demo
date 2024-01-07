@@ -36,7 +36,7 @@ function TodoPage() {
         </Form>
         <ul>
           {todos.map((item, index) => (
-            <li key={index}>
+            <li key={window.crypto.randomUUID()}>
               {item}
               <Button 
                 variant="danger" 
